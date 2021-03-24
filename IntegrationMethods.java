@@ -38,6 +38,9 @@ public class IntegrationMethods {
 	}
 	
 	
+	// add additional function here if needed
+	
+	
 	// computation of values using Euler Method
 	public void eulerMethod(double startingValue, double y, double step, double finalValue, FileWriter outputFile) {
 		try {
