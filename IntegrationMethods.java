@@ -53,6 +53,10 @@ public class IntegrationMethods {
 			while (startingValue <= finalValue) {
 				temp = y;
 
+				// select the function for which approximation will be calculated
+				// or add another one on the top of the class first and
+				// calling it from here as seen below
+				
 				y = y + step * firstFunction(y);
 //				y = y + step * secondFunction(startingValue, y);
 //				y = y + step * thirdFunction(startingValue, y);
@@ -88,6 +92,10 @@ public class IntegrationMethods {
 			double g1, gmid;
 			int run = 0;
 			while (startingValue <= finalValue) {
+				
+				// select the function for which approximation will be calculated
+				// or add another one on the top of the class first and
+				// calling it from here as seen below
 
 				g1 = firstFunction(y);
 				gmid = firstFunction(y + 0.5 * step * g1);
@@ -141,7 +149,12 @@ public class IntegrationMethods {
 			double g1, g2;
 			int run = 0;
 			while (startingValue <= finalValue) {
-
+				
+				// select the function for which approximation will be calculated
+				// or add another one on the top of the class first and
+				// calling it from here as seen below
+				
+				
 				g1 = firstFunction(y);
 				g2 = firstFunction(y + step * g1);
 
@@ -191,6 +204,11 @@ public class IntegrationMethods {
 			int run = 0;
 			while (startingValue <= finalValue) {
 
+				// select the function for which approximation will be calculated
+				// or add another one on the top of the class first and
+				// calling it from here as seen below
+				
+				
 				g1 = firstFunction(y);
 				g2 = firstFunction(y + 0.5 * step * g1);
 				g3 = firstFunction(y + 0.5 * step * g2);
@@ -269,5 +287,4 @@ public class IntegrationMethods {
 			e.printStackTrace();
 		}
 	}
-
 }
